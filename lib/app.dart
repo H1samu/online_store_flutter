@@ -12,6 +12,7 @@ class MainApp extends StatelessWidget {
         '/product': (context) => const ProductScreen(),
       },
       home: const MenuScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
