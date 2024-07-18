@@ -9,74 +9,79 @@ class MainMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 40,
+        vertical: 25,
+      ),
+      child: ListView(
+        children: [
+          buildSalesHit(),
+          buildBestNovelties(),
+        ],
+      ),
+    );
+  }
+
+  Column buildSalesHit() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 40,
-            vertical: 25,
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(
-                    'Хиты продаж',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w200),
-                  ),
-                  SizedBox(width: 20),
-                  Text(
-                    'Смотреть все',
-                    style: TextStyle(fontSize: 18),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 20),
-              StaggeredGrid.count(
-                crossAxisCount: 12,
-                mainAxisSpacing: 20,
-                crossAxisSpacing: 20,
-                children: const [
-                  StaggeredGridTile.count(
-                    crossAxisCellCount: 4,
-                    mainAxisCellCount: 6,
-                    child: ProductCardOutside(),
-                  ),
-                  StaggeredGridTile.count(
-                      crossAxisCellCount: 2,
-                      mainAxisCellCount: 3,
-                      child: ProductCardOutside()),
-                  StaggeredGridTile.count(
-                      crossAxisCellCount: 2,
-                      mainAxisCellCount: 3,
-                      child: ProductCardOutside()),
-                  StaggeredGridTile.count(
-                      crossAxisCellCount: 4,
-                      mainAxisCellCount: 3,
-                      child: ProductCardOutside()),
-                  StaggeredGridTile.count(
-                      crossAxisCellCount: 2,
-                      mainAxisCellCount: 3,
-                      child: ProductCardOutside()),
-                  StaggeredGridTile.count(
-                      crossAxisCellCount: 2,
-                      mainAxisCellCount: 3,
-                      child: ProductCardOutside()),
-                  StaggeredGridTile.count(
-                      crossAxisCellCount: 2,
-                      mainAxisCellCount: 3,
-                      child: ProductCardOutside()),
-                  StaggeredGridTile.count(
-                      crossAxisCellCount: 2,
-                      mainAxisCellCount: 3,
-                      child: ProductCardOutside()),
-                ],
-              ),
-            ],
-          ),
+        const Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              'Хиты продаж',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w200),
+            ),
+            SizedBox(width: 20),
+            Text(
+              'Смотреть все',
+              style: TextStyle(fontSize: 18),
+            ),
+          ],
+        ),
+        const SizedBox(height: 20),
+        StaggeredGrid.count(
+          crossAxisCount: 18,
+          mainAxisSpacing: 20,
+          crossAxisSpacing: 20,
+          children: const [
+            StaggeredGridTile.count(
+              crossAxisCellCount: 6,
+              mainAxisCellCount: 8,
+              child: ProductCardOutside(),
+            ),
+            StaggeredGridTile.count(
+                crossAxisCellCount: 3,
+                mainAxisCellCount: 4,
+                child: ProductCardOutside()),
+            StaggeredGridTile.count(
+                crossAxisCellCount: 3,
+                mainAxisCellCount: 4,
+                child: ProductCardOutside()),
+            StaggeredGridTile.count(
+                crossAxisCellCount: 6,
+                mainAxisCellCount: 4,
+                child: ProductCardOutside()),
+            StaggeredGridTile.count(
+                crossAxisCellCount: 3,
+                mainAxisCellCount: 4,
+                child: ProductCardOutside()),
+            StaggeredGridTile.count(
+                crossAxisCellCount: 3,
+                mainAxisCellCount: 4,
+                child: ProductCardOutside()),
+            StaggeredGridTile.count(
+                crossAxisCellCount: 3,
+                mainAxisCellCount: 4,
+                child: ProductCardOutside()),
+            StaggeredGridTile.count(
+                crossAxisCellCount: 3,
+                mainAxisCellCount: 4,
+                child: ProductCardOutside()),
+          ],
         ),
       ],
     );
@@ -168,3 +173,5 @@ class ProductCardOutside extends StatelessWidget {
     );
   }
 }
+
+Column buildBestNovelties() => const Column();
