@@ -1,6 +1,9 @@
-import 'package:flutter/material.dart';
+import 'dart:convert';
 
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:online_store_flutter/product_model/product_model.dart';
 
 class MainMenu extends StatelessWidget {
   const MainMenu({
@@ -43,69 +46,94 @@ class MainMenu extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 20),
-        StaggeredGrid.count(
-          crossAxisCount: 18,
-          mainAxisSpacing: 20,
-          crossAxisSpacing: 20,
-          children: const [
-            StaggeredGridTile.count(
-              crossAxisCellCount: 6,
-              mainAxisCellCount: 8,
-              child: ProductCardOutside(),
-            ),
-            StaggeredGridTile.count(
-                crossAxisCellCount: 3,
-                mainAxisCellCount: 4,
-                child: ProductCardOutside()),
-            StaggeredGridTile.count(
-                crossAxisCellCount: 3,
-                mainAxisCellCount: 4,
-                child: ProductCardOutside()),
-            StaggeredGridTile.count(
-                crossAxisCellCount: 6,
-                mainAxisCellCount: 4,
-                child: ProductCardOutside()),
-            StaggeredGridTile.count(
-                crossAxisCellCount: 3,
-                mainAxisCellCount: 4,
-                child: ProductCardOutside()),
-            StaggeredGridTile.count(
-                crossAxisCellCount: 3,
-                mainAxisCellCount: 4,
-                child: ProductCardOutside()),
-            StaggeredGridTile.count(
-                crossAxisCellCount: 3,
-                mainAxisCellCount: 4,
-                child: ProductCardOutside()),
-            StaggeredGridTile.count(
-                crossAxisCellCount: 3,
-                mainAxisCellCount: 4,
-                child: ProductCardOutside()),
-          ],
+        FutureBuilder<List<ProductModel>>(
+          future: loadProducts(),
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const Center(child: CircularProgressIndicator());
+            } else {
+              final products = snapshot.data!;
+              return StaggeredGrid.count(
+                crossAxisCount: 12,
+                mainAxisSpacing: 20,
+                crossAxisSpacing: 20,
+                children: [
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 4,
+                    mainAxisCellCount: 6,
+                    child: ProductCardOutside(product: products[0]),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 3,
+                    child: ProductCardOutside(product: products[1]),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 3,
+                    child: ProductCardOutside(product: products[2]),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 4,
+                    mainAxisCellCount: 3,
+                    child: ProductCardOutside(product: products[3]),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 3,
+                    child: ProductCardOutside(product: products[4]),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 3,
+                    child: ProductCardOutside(product: products[5]),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 3,
+                    child: ProductCardOutside(product: products[6]),
+                  ),
+                  StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 3,
+                    child: ProductCardOutside(product: products[7]),
+                  ),
+                ],
+              );
+            }
+          },
         ),
       ],
     );
   }
+
+  Future<List<ProductModel>> loadProducts() async {
+    final jsonString = await rootBundle.loadString('assets/product.json');
+    final jsonResponse = json.decode(jsonString) as List;
+    return jsonResponse
+        .map((product) => ProductModel.fromJson(product))
+        .toList();
+  }
 }
 
 class ProductCardOutside extends StatelessWidget {
+  final ProductModel product;
   const ProductCardOutside({
     super.key,
+    required this.product,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).pushNamed('/product');
+        Navigator.of(context).pushNamed('/product', arguments: product);
       },
       child: DecoratedBox(
-        decoration: const BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(8)),
-          color: Color(0xffe1e1e1),
-          image: DecorationImage(
-            image: AssetImage('assets/images/pic3.jpg'),
-          ),
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.black, width: 2),
+          borderRadius: const BorderRadius.all(Radius.circular(8)),
+          color: Colors.white,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -139,32 +167,52 @@ class ProductCardOutside extends StatelessWidget {
                 ),
               ),
             ),
-            const Spacer(),
-            const Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: 20,
-                vertical: 10,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: AspectRatio(
+                aspectRatio: 16 / 10,
+                child: Image.network(
+                  product.images.isNotEmpty
+                      ? product.images.first
+                      : 'assets/images/pic3.jpg',
+                  fit: BoxFit.contain,
+                ),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Название товара',
-                    style: TextStyle(fontSize: 13, fontWeight: FontWeight.w200),
-                  ),
-                  Text(
-                    'Категория',
-                    style: TextStyle(
-                      fontSize: 13,
+            ),
+            const Spacer(),
+            SizedBox(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 10,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      product.title,
+                      style: const TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w300,
+                      ),
                     ),
-                  ),
-                  Text(
-                    '50 Р',
-                    style: TextStyle(
-                      fontSize: 13,
+                    Text(
+                      product.category,
+                      style: const TextStyle(
+                        fontSize: 15,
+                      ),
                     ),
-                  ),
-                ],
+                    Text(
+                      '${product.price.toString()} \$',
+                      style: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w300,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
