@@ -1,7 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:online_store_flutter/model/product_model.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:online_store_flutter/provider/rating_provider.dart';
+import 'package:provider/provider.dart';
 
 class ProductCardInside extends StatefulWidget {
   final ProductModel product;
@@ -62,30 +66,78 @@ class _ProductCardInsideState extends State<ProductCardInside> {
         ),
         const SizedBox(height: 20),
         DecoratedBox(
-          decoration: const BoxDecoration(color: Colors.grey),
+          decoration: const BoxDecoration(color: Color(0xffE1E1E1)),
           child: Row(
             children: [
-              const Icon(Icons.face),
-              const SizedBox(width: 10),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.black, width: 2),
+                      borderRadius: BorderRadius.circular(8)),
+                  child: const Padding(
+                    padding: EdgeInsets.all(10),
+                    child: FaIcon(
+                      FontAwesomeIcons.frog,
+                      color: Colors.green,
+                    ),
+                  ),
+                ),
+              ),
+              Row(
                 children: [
-                  Text(widget.product.title),
-                  const SizedBox(height: 10),
-                  Text(widget.product.category),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: 8),
+                      Text(
+                        widget.product.title,
+                        style: const TextStyle(fontSize: 20),
+                        overflow: TextOverflow.fade,
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        widget.product.category,
+                        style: TextStyle(color: Colors.grey[800]),
+                      ),
+                      const SizedBox(height: 8),
+                    ],
+                  ),
                 ],
               ),
               const Spacer(),
-              const DecoratedBox(
-                decoration: BoxDecoration(),
-                child: Text(
-                  'Добавить в Желаемое',
-                ),
-              ),
-              const SizedBox(width: 20),
-              DecoratedBox(
-                decoration: const BoxDecoration(),
-                child: Text('Купить ${widget.product.price} ₽'),
+              Row(
+                children: [
+                  DecoratedBox(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(width: 2, color: Colors.grey)),
+                    child: const Padding(
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 15, vertical: 8),
+                      child: Text(
+                        'Добавить в Желаемое',
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 20),
+                  DecoratedBox(
+                    decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(width: 2, color: Colors.black)),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 15, vertical: 8),
+                      child: Text(
+                        'Купить ${widget.product.price} ₽',
+                        style: const TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 25),
+                ],
               ),
             ],
           ),
@@ -160,13 +212,16 @@ class _ProductCardInsideState extends State<ProductCardInside> {
         SizedBox(
           width: screenBig,
           child: DecoratedBox(
-            decoration: const BoxDecoration(color: Colors.grey),
+            decoration: const BoxDecoration(color: Color(0xffE1E1E1)),
             child: Padding(
               padding: const EdgeInsets.all(20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('Описание товара'),
+                  const Text(
+                    'Описание товара',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w300),
+                  ),
                   const SizedBox(height: 10),
                   Text(widget.product.description),
                 ],
@@ -177,15 +232,64 @@ class _ProductCardInsideState extends State<ProductCardInside> {
         const SizedBox(width: 20),
         SizedBox(
           width: screenSmall,
-          child: const DecoratedBox(
-            decoration: BoxDecoration(color: Colors.grey),
-            child: Column(
-              children: [
-                Text('Общий рейтинг'),
-                SizedBox(height: 10),
-                Text('4.5'),
-              ],
-            ),
+          child: Column(
+            children: [
+              const SizedBox(height: 10),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Общий рейтинг',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                  SizedBox(width: 10),
+                  FaIcon(
+                    FontAwesomeIcons.circleQuestion,
+                    size: 16,
+                  )
+                ],
+              ),
+              const SizedBox(height: 15),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Consumer<RatingProvider>(
+                    builder: (context, ratingProvider, child) {
+                      double rating =
+                          ratingProvider.getRating(widget.product.id);
+                      return Text(
+                        rating.toString(),
+                        style: const TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w300,
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 20),
+                  Consumer<RatingProvider>(
+                      builder: (context, ratingProvider, child) {
+                    return RatingBar.builder(
+                      initialRating:
+                          ratingProvider.getRating(widget.product.id),
+                      minRating: 0,
+                      direction: Axis.horizontal,
+                      allowHalfRating: true,
+                      itemCount: 5,
+                      itemPadding: const EdgeInsets.symmetric(horizontal: 4.0),
+                      itemBuilder: (context, _) => const Icon(
+                        Icons.star,
+                        color: Colors.amber,
+                      ),
+                      onRatingUpdate: (rating) {
+                        ratingProvider.updateRating(widget.product.id, rating);
+                      },
+                    );
+                  }),
+                ],
+              ),
+              const SizedBox(height: 10),
+            ],
           ),
         )
       ],

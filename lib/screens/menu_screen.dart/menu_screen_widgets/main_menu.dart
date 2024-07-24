@@ -1,10 +1,11 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:online_store_flutter/model/product_model.dart';
+import 'package:online_store_flutter/provider/rating_provider.dart';
+import 'package:provider/provider.dart';
 
 class MainMenu extends StatefulWidget {
   const MainMenu({
@@ -263,15 +264,21 @@ class ProductCardOutside extends StatelessWidget {
                         Radius.circular(8),
                       ),
                       border: Border.all(color: const Color(0xffa6a4a4))),
-                  child: const Padding(
-                    padding: EdgeInsets.all(6),
+                  child: Padding(
+                    padding: const EdgeInsets.all(6),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text('4.5'),
-                        SizedBox(width: 5),
-                        Icon(
+                        Consumer<RatingProvider>(
+                          builder: (context, ratingProvider, child) {
+                            return Text(ratingProvider
+                                .getRating(product.id)
+                                .toString());
+                          },
+                        ),
+                        const SizedBox(width: 5),
+                        const Icon(
                           Icons.star,
                           size: 17,
                         )

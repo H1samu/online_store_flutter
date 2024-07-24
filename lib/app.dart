@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_store_flutter/model/product_model.dart';
+import 'package:online_store_flutter/provider/rating_provider.dart';
 import 'package:online_store_flutter/screens/menu_screen.dart/menu_screen.dart';
 import 'package:online_store_flutter/screens/product_screen.dart/product_screen.dart';
 import 'package:provider/provider.dart';
@@ -9,17 +10,20 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Provider(
-      create: (context) => (),
+    return ChangeNotifierProvider(
+      create: (context) => RatingProvider(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         initialRoute: '/home',
         routes: {
-          '/home': (context) => MenuScreen(),
+          '/home': (context) => const MenuScreen(),
           '/product': (context) {
-            final product =
-                ModalRoute.of(context)!.settings.arguments as ProductModel;
-            return ProductScreen(product: product);
+            final arguments =
+                ModalRoute.of(context)!.settings.arguments as ProductModel?;
+            if (arguments == null) {
+              return const MenuScreen();
+            }
+            return ProductScreen(product: arguments);
           },
         },
         home: const MenuScreen(),

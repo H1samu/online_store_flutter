@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ShopAppBar extends StatelessWidget implements PreferredSizeWidget {
   const ShopAppBar({
@@ -11,7 +12,16 @@ class ShopAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: Colors.white,
       surfaceTintColor: Colors.white,
-      leading: const Icon(Icons.accessibility_new_outlined),
+      leading: const Padding(
+        padding: EdgeInsets.all(10.0),
+        child: Padding(
+          padding: EdgeInsets.all(10),
+          child: FaIcon(
+            FontAwesomeIcons.frog,
+            color: Colors.green,
+          ),
+        ),
+      ),
       title: const Row(
         children: [
           Text(
