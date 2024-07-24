@@ -9,6 +9,8 @@ class ShopAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Colors.white,
+      surfaceTintColor: Colors.white,
       leading: const Icon(Icons.accessibility_new_outlined),
       title: const Row(
         children: [

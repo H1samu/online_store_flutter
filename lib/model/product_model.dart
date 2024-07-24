@@ -1,4 +1,6 @@
-class ProductModel {
+import 'package:flutter/material.dart';
+
+class ProductModel extends ChangeNotifier {
   final int id;
   final String title;
   final double price;
@@ -18,10 +20,6 @@ class ProductModel {
   });
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
-    var imagesFromJson = json['images'];
-    List<String> imagesList =
-        imagesFromJson != null ? List<String>.from(imagesFromJson) : [];
-
     return ProductModel(
       id: json['id'],
       title: json['title'],
@@ -29,7 +27,7 @@ class ProductModel {
       description: json['description'],
       catalog: json['catalog'],
       category: json['category'],
-      images: imagesList,
+      images: List<String>.from(json['images']),
     );
   }
 }

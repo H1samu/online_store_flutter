@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:online_store_flutter/model/product_model.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
@@ -200,11 +199,9 @@ class _ProductCardInsideState extends State<ProductCardInside> {
       ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: CachedNetworkImage(
-          imageUrl: imageUrl,
+        child: Image.network(
+          imageUrl,
           fit: BoxFit.contain,
-          placeholder: (context, url) => const SizedBox(),
-          errorWidget: (context, url, error) => const Icon(Icons.error),
         ),
       ),
     );
