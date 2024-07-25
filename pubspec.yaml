@@ -14,7 +14,6 @@ dependencies:
   provider: ^6.1.2
   cached_network_image: ^3.3.1
   flutter_rating_bar: ^4.0.1
-  easy_localization: ^3.0.7
 
 dev_dependencies:
   flutter_test:
@@ -26,4 +25,3 @@ flutter:
   uses-material-design: true
   assets:
     - assets/product_RU.json
-    - assets/images/

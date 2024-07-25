@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:online_store_flutter/model/product_model.dart';
-import 'package:online_store_flutter/provider/rating_provider.dart';
+import 'package:online_store_flutter/screens/common_widgets/model/product_model.dart';
+import 'package:online_store_flutter/screens/common_widgets/provider/rating_provider.dart';
 import 'package:online_store_flutter/screens/menu_screen.dart/menu_screen.dart';
 import 'package:online_store_flutter/screens/product_screen.dart/product_screen.dart';
 import 'package:provider/provider.dart';

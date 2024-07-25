@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:online_store_flutter/model/product_model.dart';
-import 'package:online_store_flutter/provider/rating_provider.dart';
+import 'package:online_store_flutter/screens/common_widgets/model/product_model.dart';
+import 'package:online_store_flutter/screens/common_widgets/provider/rating_provider.dart';
 import 'package:provider/provider.dart';
 
 class MainMenu extends StatefulWidget {
@@ -23,6 +23,7 @@ class _MainMenuState extends State<MainMenu> {
   @override
   void initState() {
     super.initState();
+
     loadJsonData();
   }
 
@@ -55,7 +56,7 @@ class _MainMenuState extends State<MainMenu> {
 
   void _scrollLeft() {
     _scrollController.animateTo(
-      _scrollController.offset - 200, // количество пикселей для прокрутки влево
+      _scrollController.offset - 200,
       duration: const Duration(milliseconds: 300),
       curve: Curves.easeInOut,
     );
@@ -63,8 +64,7 @@ class _MainMenuState extends State<MainMenu> {
 
   void _scrollRight() {
     _scrollController.animateTo(
-      _scrollController.offset +
-          200, // количество пикселей для прокрутки вправо
+      _scrollController.offset + 200,
       duration: const Duration(milliseconds: 300),
       curve: Curves.easeInOut,
     );
@@ -221,7 +221,6 @@ class _MainMenuState extends State<MainMenu> {
   }
 }
 
-// Пробовал размещение изображения разными способами, пока нет идей как сделать правильно
 class ProductCardOutside extends StatelessWidget {
   final ProductModel product;
   const ProductCardOutside({

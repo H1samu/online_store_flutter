@@ -2,9 +2,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:online_store_flutter/model/product_model.dart';
+import 'package:online_store_flutter/screens/common_widgets/model/product_model.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:online_store_flutter/provider/rating_provider.dart';
+import 'package:online_store_flutter/screens/common_widgets/provider/rating_provider.dart';
 import 'package:provider/provider.dart';
 
 class ProductCardInside extends StatefulWidget {
@@ -113,26 +113,40 @@ class _ProductCardInsideState extends State<ProductCardInside> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(width: 2, color: Colors.grey)),
-                    child: const Padding(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 15, vertical: 8),
-                      child: Text(
-                        'Добавить в Желаемое',
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 15, vertical: 8),
+                      child: GestureDetector(
+                        onTap: () {
+                          const snackBar = SnackBar(
+                              content: Text('Товар добавлен в желаемое'),
+                              duration: Duration(seconds: 2));
+                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                        },
+                        child: const Text('Добавить в Желаемое'),
                       ),
                     ),
                   ),
                   const SizedBox(width: 20),
-                  DecoratedBox(
-                    decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8),
-                        border: Border.all(width: 2, color: Colors.black)),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 15, vertical: 8),
-                      child: Text(
-                        'Купить ${widget.product.price} ₽',
-                        style: const TextStyle(color: Colors.white),
+                  GestureDetector(
+                    onTap: () {
+                      const snackBar = SnackBar(
+                          content: Text('Товар добавлен в корзину'),
+                          duration: Duration(seconds: 2));
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    },
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(width: 2, color: Colors.black)),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 15, vertical: 8),
+                        child: Text(
+                          'Купить ${widget.product.price} \$',
+                          style: const TextStyle(color: Colors.white),
+                        ),
                       ),
                     ),
                   ),
