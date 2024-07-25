@@ -1,4 +1,4 @@
-# online_store_flutter
+# frog_go_shop 
 
 Для проекта были использованы следующие пакеты:
 - [flutter_staggered_grid_view](https://pub.dev/packages/flutter_staggered_grid_view)

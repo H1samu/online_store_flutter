@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:online_store_flutter/screens/authorization/log_in.dart';
+import 'package:frog_go_shop/screens/authorization/log_in.dart';
 
 class ShopAppBar extends StatefulWidget implements PreferredSizeWidget {
   const ShopAppBar({Key? key}) : super(key: key);

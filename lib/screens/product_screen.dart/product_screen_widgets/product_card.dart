@@ -2,9 +2,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:online_store_flutter/screens/common_widgets/model/product_model.dart';
+import 'package:frog_go_shop/screens/common_widgets/model/product_model.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:online_store_flutter/screens/common_widgets/provider/rating_provider.dart';
+import 'package:frog_go_shop/screens/common_widgets/provider/rating_provider.dart';
 import 'package:provider/provider.dart';
 
 class ProductCardInside extends StatefulWidget {
