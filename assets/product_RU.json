@@ -1,0 +1,422 @@
+[
+    {
+        "id": 1,
+        "title": "Fjallraven - Складной рюкзак № 1, вмещающий 15 ноутбуков",
+        "price": 109.95,
+        "description": "Ваш идеальный рюкзак для повседневного использования и прогулок в лесу. Спрячьте свой ноутбук (до 15 дюймов) в мягком чехле, который станет вашим повседневным",
+        "catalog": "Одежда",
+        "category": "Мужская одежда",
+        "images": [
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 3.9,
+            "count": 120
+        }
+    },
+    {
+        "id": 2,
+        "title": "Мужская повседневневная футболка премиум-класса Slim Fit",
+        "price": 22.3,
+        "description": "Приталенный фасон, контрастный длинный рукав реглан, планка henley на трех пуговицах, легкая и мягкая ткань, обеспечивающая воздухопроницаемость и комфорт при носке. Рубашки с круглым вырезом и плотной строчкой, выполненные из прочного материала, отлично подходят для повседневной одежды и для ярых поклонников бейсбола. Круглый вырез в стиле Хенли дополнен планкой на трех пуговицах.",
+        "category": "Мужская одежда",
+        "catalog": "Одежда",
+        "images": [
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 4.1,
+            "count": 259
+        }
+    },
+    {
+        "id": 3,
+        "title": "Мужская хлопчатобумажная куртка",
+        "price": 55.99,
+        "description": "Отличные куртки для весны / осени / зимы, подходящие для многих случаев, таких как работа, пешие прогулки, кемпинг, восхождение на горы / скалолазание, езда на велосипеде, путешествия или другие виды активного отдыха. Отличный выбор подарка для вас или членов вашей семьи. Сердечная любовь отцу, мужу или сыну в этот день благодарения или Рождества.",
+        "category": "Мужская одежда",
+        "catalog": "Одежда",
+        "images": [
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    },
+    {
+        "id": 4,
+        "title": "Мужская повседневная приталенная посадка",
+        "price": 15.99,
+        "description": "Цвет может немного отличаться на экране и на практике. / Пожалуйста, обратите внимание, что телосложение у каждого человека разное, поэтому подробную информацию о размере можно найти ниже в описании товара.",
+        "category": "Мужская одежда",
+        "catalog": "Одежда",
+        "images": [
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 2.1,
+            "count": 430
+        }
+    },
+    {
+        "id": 5,
+        "title": "Браслет-цепочка John Hardy Women's Legends Naga Gold & Silver Dragon Station",
+        "price": 695.00,
+        "description": "Модель Naga из нашей коллекции Legends была вдохновлена мифическим водяным драконом, который защищает жемчужину океана. Носите ее лицом внутрь, чтобы дарить любовь и изобилие, или наружу, чтобы защитить.",
+        "category": "Ювелирные изделия",
+        "catalog": "Аксессуары",
+        "images": [
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 4.6,
+            "count": 400
+        }
+    },
+    {
+        "id": 6,
+        "title": "Миниатюрная микрозавивка из чистого золота",
+        "price": 168.00,
+        "description": "Удовлетворение гарантировано. Верните или обменяйте любой заказ в течение 30 дней.Разработан и продается компанией Hafeez Center в США. Удовлетворение гарантировано. Верните или обменяйте любой заказ в течение 30 дней.",
+        "category": "Ювелирные изделия",
+        "catalog": "Аксессуары",
+        "images": [
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 3.9,
+            "count": 70
+        }
+    },
+    {
+        "id": 7,
+        "title": "'Принцесса' с покрытием из белого золота",
+        "price": 9.99,
+        "description": "Обручальное кольцо с бриллиантом Classic, созданное специально для нее. Подарки, которые еще больше подчеркнут вашу любовь к помолвке, свадьбе, годовщине, Дню Святого Валентина...",
+        "category": "Ювелирные изделия",
+        "catalog": "Аксессуары",
+        "images": [
+            "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 3,
+            "count": 400
+        }
+    },
+    {
+        "id": 8,
+        "title": "Двойная Сова с пирсингом из нержавеющей стали, покрытая розовым золотом",
+        "price": 10.99,
+        "description": "Серьги-заглушки с двойными расклешенными концами, покрытые розовым золотом. Изготовлены из нержавеющей стали 316L",
+        "category": "Ювелирные изделия",
+        "catalog": "Аксессуары",
+        "images": [
+            "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 1.9,
+            "count": 100
+        }
+    },
+    {
+        "id": 9,
+        "title": "Портативный внешний жесткий диск WD Elements емкостью 2 ТБ - USB 3.0",
+        "price": 64.00,
+        "description": "Совместимость с USB 3.0 и USB 2.0 Быстрая передача данных Повышает производительность ПК Высокая емкость; Совместимость с форматированием NTFS для Windows 10, Windows 8.1, Windows 7; Может потребоваться переформатирование для других операционных систем; Совместимость может варьироваться в зависимости от конфигурации оборудования пользователя и операционной системы",
+        "category": "Электроника",
+        "catalog": "Техника",
+        "images": [
+            "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 3.3,
+            "count": 203
+        }
+    },
+    {
+        "id": 10,
+        "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+        "price": 109.0,
+        "description": "Простое обновление для более быстрой загрузки, выключения, загрузки приложений и отклика (по сравнению с 2,5-дюймовым жестким диском SATA с частотой вращения 5400 об/мин; На основе опубликованных спецификаций и внутренних сравнительных тестов с использованием оценок PCMark vantage) Повышает производительность пакетной записи, что делает его идеальным для обычных рабочих нагрузок ПК. Идеальный баланс производительности и надежности - скорость чтения/записи до 535 МБ/с/ 450 МБ/ с (на основе внутреннего тестирования; Производительность может варьироваться в зависимости от емкости накопителя, хост-устройства, операционной системы и приложения).",
+        "category": "Электроника",
+        "catalog": "Техника",
+        "images": [
+            "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 2.9,
+            "count": 470
+        }
+    },
+    {
+        "id": 11,
+        "title": "SSD-накопитель Silicon Power на 256 ГБ с кэш-памятью 3D NAND A55 SLC Повышает производительность SATA III на 2,5",
+        "price": 109.00,
+        "description": "Технология 3D NAND flash обеспечивает высокую скорость передачи данных, что ускоряет загрузку и повышает общую производительность системы. Усовершенствованная технология SLC-кэширования обеспечивает повышение производительности и продлевает срок службы. Тонкий корпус толщиной 7 мм подходит для ультрабуков и ультратонких ноутбуков. Поддерживает команду TRIM, технологию сбора мусора, RAID и ECC (проверка и исправление ошибок) для обеспечения оптимизированной производительности и повышенной надежности.",
+        "category": "Электроника",
+        "catalog": "Техника",
+        "images": [
+            "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 4.8,
+            "count": 319
+        }
+    },
+    {
+        "id": 12,
+        "title": "Игровой накопитель WD объемом 4 ТБ Работает с портативным внешним жестким диском Playstation 4",
+        "price": 114.00,
+        "description": "Расширьте свой игровой опыт на PS4, играйте в любом месте быстро и легко, установите элегантный дизайн с высокой производительностью и 3-летнюю ограниченную гарантию производителя",
+        "category": "Электроника",
+        "catalog": "Техника",
+        "images": [
+            "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 4.8,
+            "count": 400
+        }
+    },
+    {
+        "id": 13,
+        "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+        "price": 599.00,
+        "description": "21,5-дюймовый широкоформатный IPS-дисплей с разрешением Full HD (1920 x 1080) и технологией Radeon FreeSync. Нет совместимости с креплением VESA Частота обновления: 75 Гц - При использовании порта HDMI Дизайн с нулевой рамкой | ультратонкий корпус | время отклика 4 мс | Соотношение сторон IPS-панели - 16: 9. Поддерживаемая цветопередача - 16,7 миллионов цветов. Яркость - 250 нит, угол наклона - от 5 до 15 градусов. Угол обзора по горизонтали - 178 градусов. Угол обзора по вертикали -178 градусов 75 Гц",
+        "category": "Электроника",
+        "catalog": "Техника",
+        "images": [
+            "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 2.9,
+            "count": 250
+        }
+    },
+    {
+        "id": 14,
+        "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+        "price": 999.99,
+        "description": "ИЗОГНУТЫЙ ИГРОВОЙ МОНИТОР SUPER ULTRAWIDE ДИАГОНАЛЬЮ 49 ДЮЙМОВ с СООТНОШЕНИЕМ СТОРОН 32:9 и двумя 27-дюймовыми экранами с технологией КВАНТОВЫХ ТОЧЕК side by side (QLED), поддержкой HDR и заводской калибровкой обеспечивает потрясающе реалистичные и точные цвета и контрастность, высокую частоту ОБНОВЛЕНИЯ 144 Гц и сверхбыстрое время отклика 1 мс, устраняя размытость изображения при движении, призрачность изображения и уменьшая задержку ввода",
+        "category": "Электроника",
+        "catalog": "Техника",
+        "images": [
+            "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 2.2,
+            "count": 140
+        }
+    },
+    {
+        "id": 15,
+        "title": "Женская куртка для сноуборда BIYLACLESEN 3-в-1, зимние пальто",
+        "price": 56.99,
+        "description": "Примечание: Куртки стандартного размера США, пожалуйста, выбирайте размер, соответствующий вашей обычной одежде Материал: 100% полиэстер; Съемная подкладочная ткань: Теплый флис. Съемная функциональная подкладка: приятная для кожи, легкая и теплая.Куртка-подкладка с воротником-стойкой согреет вас в холодную погоду. Карманы на молнии: 2 кармана для рук на молнии, 2 кармана на молнии на груди (достаточно для хранения карточек или ключей) и 1 потайной карман внутри. Карманы для рук на молнии и потайной карман надежно защитят ваши вещи. Продуманный дизайн: Регулируемый и съемный капюшон и регулируемая манжета для защиты от ветра и воды, обеспечивающие удобную посадку. Съемная конструкция 3 в 1 обеспечивает большее удобство, вы можете отделять верхнюю одежду от внутренней по мере необходимости или носить ее вместе. Она подходит для разных сезонов и поможет вам адаптироваться к разным климатическим условиям",
+        "category": "Женская одежда",
+        "catalog": "Одежда",
+        "images": [
+            "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 2.6,
+            "count": 235
+        }
+    },
+    {
+        "id": 16,
+        "title": "Женская байкерская куртка Lock and Love из искусственной кожи со съемным капюшоном",
+        "price": 29.95,
+        "description": "100% ПОЛИУРЕТАН (оболочка) 100% ПОЛИЭСТЕР (подкладка) 75% ПОЛИЭСТЕР 25% ХЛОПОК (СВИТЕР), Материал из искусственной кожи для придания стиля и комфорта / 2 кармана спереди, джинсовая куртка из искусственной кожи с капюшоном '2 в одном', пуговицы на талии / отстрочка по бокам, ТОЛЬКО РУЧНАЯ СТИРКА / НЕ ОТБЕЛИВАТЬ / ВЫСТИЛАТЬ СУХОЙ ТКАНЬЮ / НЕ ГЛАДИТЬ",
+        "category": "Женская одежда",
+        "catalog": "Одежда",
+        "images": [
+            "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 2.9,
+            "count": 340
+        }
+    },
+    {
+        "id": 17,
+        "title": "Дождевик Женская ветровка Полосатые альпинистские плащи",
+        "price": 39.99,
+        "description": "Легкий, идеально подходящий для поездок или повседневной носки-Длинный рукав с капюшоном, регулируемая кулиска на талии. Дождевик застегивается спереди на пуговицы и молнию, полностью на подкладке в полоску, а также имеет 2 боковых кармана. Дождевик удобен для хранения всевозможных вещей, он закрывает бедра, а капюшон большой, но не слишком большой.Капюшон на хлопковой подкладке с регулируемыми завязками придает ему по-настоящему стильный вид.",
+        "category": "Женская одежда",
+        "catalog": "Одежда",
+        "images": [
+            "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 3.8,
+            "count": 679
+        }
+    },
+    {
+        "id": 18,
+        "title": "Женское однотонное платье MBJ с коротким рукавом и V-образным вырезом лодочкой",
+        "price": 9.85,
+        "description": "95% ВИСКОЗА, 5% СПАНДЕКС, Сделано в США или импортировано, не отбеливается, Легкая ткань с отличной эластичностью для комфорта, рукава и вырез в рубчик / Двойная прострочка по низу.",
+        "category": "Женская одежда",
+        "catalog": "Одежда",
+        "images": [
+            "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 4.7,
+            "count": 130
+        }
+    },
+    {
+        "id": 19,
+        "title": "Открытая женская рубашка с коротким рукавом.",
+        "price": 7.95,
+        "description": "100% полиэстер, машинная стирка, 100% интерлок из катионного полиэстера, машинная стирка и предварительная усадка для отличной посадки, Легкая, вместительная и хорошо пропускающая воздух влагоотводящая ткань, которая помогает удерживать влагу, Мягкая легкая ткань с удобным V-образным вырезом горловины и облегающим кроем, придает образу элегантности и женственности. силуэт и дополнительный комфорт",
+        "category": "Женская одежда",
+        "catalog": "Одежда",
+        "images": [
+            "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 4.5,
+            "count": 146
+        }
+    },
+    {
+        "id": 20,
+        "title": "Женская футболка DANVOUY Повседневная хлопчатобумажная короткая",
+        "price": 12.99,
+        "description": "95% хлопок, 5% Спандекс, Особенности: Повседневное, Короткий рукав, Буквенный принт, V-образный вырез, Модные футболки, Ткань мягкая и немного тянется., Для повседневного использования/офиса/Пляжа/школы/Дома/улицы. Сезон: Весна, Лето, Осень, Зима.",
+        "category": "Женская одежда",
+        "catalog": "Одежда",
+        "images": [
+            "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+        ],
+        "rating": {
+            "rate": 3.6,
+            "count": 145
+        }
+    }
+]

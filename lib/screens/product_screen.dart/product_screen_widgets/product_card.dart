@@ -233,6 +233,7 @@ class _ProductCardInsideState extends State<ProductCardInside> {
         SizedBox(
           width: screenSmall,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 10),
               const Row(
@@ -249,7 +250,7 @@ class _ProductCardInsideState extends State<ProductCardInside> {
                   )
                 ],
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -260,7 +261,7 @@ class _ProductCardInsideState extends State<ProductCardInside> {
                       return Text(
                         rating.toString(),
                         style: const TextStyle(
-                          fontSize: 30,
+                          fontSize: 40,
                           fontWeight: FontWeight.w300,
                         ),
                       );

@@ -27,7 +27,7 @@ class _MainMenuState extends State<MainMenu> {
   }
 
   Future<void> loadJsonData() async {
-    String jsonString = await rootBundle.loadString('assets/product.json');
+    String jsonString = await rootBundle.loadString('assets/product_RU.json');
     final jsonResponse = json.decode(jsonString);
     setState(() {
       items = jsonResponse;
@@ -213,7 +213,7 @@ class _MainMenuState extends State<MainMenu> {
   }
 
   Future<List<ProductModel>> loadProducts() async {
-    final jsonString = await rootBundle.loadString('assets/product.json');
+    final jsonString = await rootBundle.loadString('assets/product_RU.json');
     final jsonResponse = json.decode(jsonString) as List;
     return jsonResponse
         .map((product) => ProductModel.fromJson(product))
@@ -240,15 +240,6 @@ class ProductCardOutside extends StatelessWidget {
           border: Border.all(color: Colors.black, width: 2),
           borderRadius: const BorderRadius.all(Radius.circular(8)),
           color: Colors.white,
-          image: DecorationImage(
-            alignment: Alignment.center,
-            fit: BoxFit.contain,
-            image: NetworkImage(
-              product.images.isNotEmpty
-                  ? product.images.first
-                  : 'https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg',
-            ),
-          ),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -288,7 +279,24 @@ class ProductCardOutside extends StatelessWidget {
                 ),
               ),
             ),
-            const Spacer(),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      alignment: Alignment.center,
+                      fit: BoxFit.contain,
+                      image: NetworkImage(
+                        product.images.isNotEmpty
+                            ? product.images.first
+                            : 'https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
             SizedBox(
               child: Padding(
                 padding: const EdgeInsets.symmetric(
@@ -299,9 +307,9 @@ class ProductCardOutside extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
+                      product.title,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      product.title,
                       style: const TextStyle(
                         fontSize: 17,
                         fontWeight: FontWeight.w300,
